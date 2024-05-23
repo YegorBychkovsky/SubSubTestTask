@@ -1,0 +1,50 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: relative;
+  width: 100vw;
+  padding: 15px;
+
+  box-shadow: 0 4px 15px 0 #0000000f;
+  z-index: 100;
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 5px 10px;
+
+    background: #f3f3f3;
+    border-radius: 500px;
+
+    img {
+      width: 32px;
+      border-radius: 50%;
+    }
+  }
+}
+.post {
+  padding: 0 8vw 0;
+  background: #fafafa;
+
+  @media screen and (min-width: 1240px) {
+    padding: 0 10vw;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 0 8vw;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media screen and (min-width: 1240px) {
+      flex-direction: row;
+    }
+  }
+}

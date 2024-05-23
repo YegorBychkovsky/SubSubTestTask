@@ -1,0 +1,76 @@
+.comment {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  &_main {
+    display: flex;
+    align-items: start;
+    gap: 16px;
+
+    .user_info {
+      font-weight: 600;
+    }
+  }
+
+  img {
+    min-width: 32px;
+    max-width: 32px;
+    border-radius: 50%;
+
+    @media screen and (min-width: 768px) {
+      min-width: 48px;
+      max-width: 48px;
+    }
+  }
+
+  &_age {
+    span {
+      font-weight: 400;
+      color: #707070;
+    }
+  }
+
+  .action_block {
+    display: flex;
+    width: 80px;
+    justify-content: space-between;
+    gap: 16px;
+
+    div {
+      display: flex;
+      align-items: center;
+
+      button {
+        padding: 5px 2px 0;
+        cursor: pointer;
+
+        &:hover,
+        &:active {
+          svg.heartIcon {
+            path {
+              fill: #e92929;
+            }
+          }
+
+          svg.replyIcon {
+            path {
+              fill: #2956e9;
+            }
+          }
+        }
+
+        svg {
+          width: 17px;
+          path {
+            fill: #a9a9a9;
+          }
+        }
+      }
+
+      span {
+        color: #707070;
+      }
+    }
+  }
+}
